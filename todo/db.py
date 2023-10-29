@@ -40,3 +40,8 @@ def init_db_command():
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
+
+# export FLASK_DATABASE_HOST='localhost'
+# export FLASK_DATABASE_PASSWORD='Luis..1658'
+# export FLASK_DATABASE_USER='root'
+# export FLASK_DATABASE='prueba'
